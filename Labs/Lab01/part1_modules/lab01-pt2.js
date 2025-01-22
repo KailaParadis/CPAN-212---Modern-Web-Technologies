@@ -8,23 +8,23 @@ const app = http.createServer((req, res) => {
         res.end("Hello from the server")
     }
     else if(req.url === "/homepage") {
-        const filePath = "./pages/homepage.html";
-        let webpage = fs.readFileSync("./pages/homepage.html")
+        const filePath = "../part2_bookstore/pages/homepage.html";
+        let webpage = fs.readFileSync(filePath)
         res.end(webpage)
     }
     else if(req.url === "/about") {
-        const filePath = "./pages/about.html";
-        let webpage = fs.readFileSync("./pages/about.html")
+        const filePath = "../part2_bookstore/pages/about.html";
+        let webpage = fs.readFileSync(filePath)
         res.end(webpage)
     }
     else if(req.url === "/contact") {
-        const filePath = "./pages/contact.html";
-        let webpage = fs.readFileSync("./pages/contact.html")
+        const filePath = "../part2_bookstore/pages/contact.html";
+        let webpage = fs.readFileSync(filePath)
         res.end(webpage)
     }
     else if(req.url === "/login") {
-        const filePath = "./pages/login.html";
-        let webpage = fs.readFileSync("login.html")
+        const filePath = "../part2_bookstore/pages/login.html";
+        let webpage = fs.readFileSync(filePath)
         res.end(webpage)
     }
     else {res.end("Error 404- Page not Found")}
