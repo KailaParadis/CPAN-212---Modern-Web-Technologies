@@ -2,7 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 30000;
+    padding: 0;
     background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
@@ -10,7 +10,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: lightblue;
+    background-color: #4CAF50;
     color: white;
     padding: 1rem;
     text-align: center;
@@ -33,7 +33,7 @@ main {
 }
 
 main h2 {
-    color: lightblue;
+    color: #4CAF50;
     margin-bottom: 1rem;
 }
 
@@ -42,7 +42,7 @@ main p {
 }
 
 main a {
-    color: skyblue;
+    color: #4CAF50;
     text-decoration: none;
     font-weight: bold;
 }
@@ -73,21 +73,21 @@ form input, form textarea, form button {
 }
 
 form button {
-    background-color: skyblue;
+    background-color: #4CAF50;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 form button:hover {
-    background-color: lightblue;
+    background-color: #45a049;
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: blue;
+    background-color: #4CAF50;
     color: white;
     margin-top: 2rem;
     position: relative;
@@ -95,4 +95,13 @@ footer {
     width: 100%;
 }
 
+/* Responsive Design */
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+    }
 
+    header h1 {
+        font-size: 2rem;
+    }
+}
