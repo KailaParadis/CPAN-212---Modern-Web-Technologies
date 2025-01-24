@@ -24,8 +24,8 @@ router.get("/add/:x/:y", (req, res)=>{
 })
 
 router.get("/calculate/:a/:b/:operation", (req, res) => {
-    let x = parseFloat(req.params.x); //parse lets input be read as an integer not a String
-    let y = parseFloat(req.params.y);
+    let a = parseFloat(req.params.a); //parse lets input be read as an integer not a String
+    let b = parseFloat(req.params.b);
 
     switch (req.params.operation) {
         case "+":
